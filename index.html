@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Hitung</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div class="header"> 
+        <h1> Katik Kalkulator Matematik </h1>
+        <h2> Welcome to Katik</h2>
+        <h3 class="header2"> Hai Sobat, Selamat datang di Katik :] </h3>
+        <h4 class="header2"> Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar </h4>
+        <h4 class="header2"> "Persegi" </h4>
+    </div>
+    <div class="fill">
+        <p id="center"> <img src="persegi.png"> </p>
+        <p> Rumus Luas dan Keliling Persegi</p>
+        <p id="center"> L = S x S</p>
+        <p id="center"> K = 4 x S</p>
+        <p> Dimana:</p>
+        <p> L = Luas</p>
+        <p> K = Keliling</p>
+        <p> S = Sisi</p>
+    </div>
+    <form id="persegiForm">
+        <label for="sisi">Masukkan nilai sisi:</label><br>
+        <input type="number" id="sisi" name="sisi" required><br>
+        <button type="submit">Hitung</button>
+        <button id="reset"> Reset </button>
+    </form>
+    <div id="result">
+        <p>Keliling: <span id="kelilingResult"></span></p>
+        <p>Luas: <span id="luasResult"></span></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
